@@ -1,0 +1,113 @@
+Question 1
+
+object Demo{
+	def main(args:Array[String])
+	{
+		val str = "https://www.google.com"
+		val output = str.reverse.toUpperCase()
+		println(s"Reverse string in Capital letters is $output")
+	}
+}
+
+
+Question 2
+
+scala> val donutName = "Vanilla Donut"
+val donutName: String = Vanilla Donut
+
+scala> val quantity_purchased = 10
+val quantity_purchased: Int = 10
+
+scala> val price = 2.50
+val price: Double = 2.5
+
+
+scala> val donutJson =
+     | s"""
+     | {
+     | "Donut Name : ":"$donutName",
+     | "Quantity Purchased : ": "$quantity_purchased",
+     | "Price : ":"$price"
+     | }
+     | """.stripMargin
+val donutJson: String =
+"
+{
+"Donut Name : ":"Vanilla Donut",
+"Quantity Purchased : ": "10",
+"Price : ":"2.5"
+}
+"
+
+Question 3
+
+import scala.io.StdIn._
+object Demo{
+	def main(args:Array[String])
+	{
+			val name = readLine("Enter your name : ")
+			println("Enter your Age : ")
+			val age = readInt()
+			println(Console.BOLD)
+			print("Name: ")
+			print(Console.UNDERLINED)
+			print(name)
+			println(Console.BOLD)
+			print("Age: ")
+			print(Console.RESET)
+			print(age)
+	}
+}
+
+Question 4
+
+scala> val String = "http://www.google.com"
+val String: String = http://www.google.com
+
+scala> String.charAt(7)
+val res0: Char = w
+
+
+Question 5
+
+object Demo{
+	def main(args:Array[String])
+	{
+			val glazedDonut = "Glazed Donut"
+			val unitPrice = "2.50"
+			val qtyPurchased = 10
+			val totalCost = qtyPurchased * unitPrice
+			println(f"""Total cost of $qtyPurchased $glazedDonut${if(qtyPurchased > 1 )"s "else ""} = $$$totalCost%1.2f""")
+	}
+}
+
+Question 6
+import scala.io.Stdln._
+val favouriteMovie = readLine("What is your favourite movie of all times?")
+print(s"$favouriteMovie is totally awesome ")
+
+
+Question 7
+
+
+object Demo{
+	def main(args:Array[String])
+	{
+		val codes = Seq("A","BB","CCC", "DDDD","EEEEE")
+		val codeWithLength = codes.map{
+			code =>
+			s"code - ${Code.length}"
+		}
+		codeWithLength = Code.foreach(println(_))
+	}
+}
+
+Question 8
+object Demo{
+	def main(args:Array[String])
+	{
+		val listRange = list.range(100,110,120,130,140)
+		val listRangeAsStr = listRange.mkString(",")
+		println(s"Sum for elements in the list = ${listRange.sum}")
+	}
+}
